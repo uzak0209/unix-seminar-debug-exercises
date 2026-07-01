@@ -13,16 +13,7 @@
   gcc -O3 fibonacci.c -o fib_O3
   ```
 
-### 演習2: 警告オプションでバグを早期発見する
-- **ファイル**: `warning_test.c`
-- **コンパイル**:
-  ```bash
-  gcc warning_test.c -o warning_test
-  gcc -Wall warning_test.c -o warning_test
-  gcc -Wall -Wextra warning_test.c -o warning_test
-  ```
-
-### 演習3: printfデバッグ vs GDB
+### 演習2: デバッグ手法の比較（printfデバッグ vs GDB）
 - **ファイル**: `bug_hunt.c`
 - **コンパイル**:
   ```bash
@@ -30,12 +21,20 @@
   gdb ./bug_hunt
   ```
 
-### 演習4: Segmentation Faultの解析
+### 演習3: Segmentation Faultの解析
 - **ファイル**: `crash.c`
 - **コンパイル**:
   ```bash
   gcc -g -O0 crash.c -o crash
   gdb ./crash
+  ```
+
+### 演習4: 条件付きバグの追跡
+- **ファイル**: `conditional_bug.c`
+- **コンパイル**:
+  ```bash
+  gcc -g -O0 conditional_bug.c -o conditional_bug
+  gdb ./conditional_bug
   ```
 
 ### 演習5: 総合演習 - メモリリークとパフォーマンス分析
