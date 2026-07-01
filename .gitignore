@@ -1,0 +1,26 @@
+# Compiled binaries
+*.o
+*.out
+a.out
+fib_*
+bug_hunt
+crash
+conditional_bug
+network_sim
+warning_test
+debug_compare
+segfault
+program
+
+# Debug symbols
+*.dSYM/
+
+# gprof output
+gmon.out
+profile.txt
+
+# Core dumps
+core.*
+
+# macOS
+.DS_Store
