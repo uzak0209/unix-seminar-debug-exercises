@@ -38,15 +38,7 @@
   gdb ./crash
   ```
 
-### 演習5: 条件付きバグの追跡
-- **ファイル**: `conditional_bug.c`
-- **コンパイル**:
-  ```bash
-  gcc -g -O0 conditional_bug.c -o conditional_bug
-  gdb ./conditional_bug
-  ```
-
-### 演習6: 総合演習 - メモリリークとパフォーマンス分析
+### 演習5: 総合演習 - メモリリークとパフォーマンス分析
 - **ファイル**: `network_sim.c`
 - **コンパイル**:
   ```bash
